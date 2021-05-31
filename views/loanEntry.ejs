@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=\, initial-scale=1.0">
+    <link rel="stylesheet" href="/loanEntryStyle.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="loanEntry">
+        <h2>New Loan Entry</h2>
+        
+ 
+            <form spellcheck="false" class="search_form" method="POST" action="/NewLoanEntry/search">
+              <div class="searchrow">
+                <h4>Member Code</h4>
+                <input name="memberCode" id="code"  type="text" />
+              </div>
+              <button class="submit" type="submit">
+                Search
+              </button>
+            </form>
+
+
+          <div class="row">
+            <p>Name</p>
+            <input name="username" value="<%=  loanUserName %>" type="text" />
+          </div>
+          <div class="row">
+            <p>Address</p>
+            <input name="address" value="<%=  loanUserAddress %>" cols="35" rows="2"></input>
+          </div>
+          <div class="row">
+            <p>PIN No.</p>
+            <input value="<%=  loanUserPIN %>" type="number" />
+          </div>
+          <div class="row">
+            <p>Voter Card No.</p>
+            <input value="<%=  loanUserVoter %>" type="text" />
+          </div>
+          <div class="row">
+            <p>Adhar Card No.</p>
+            <input value="<%=  loanUserAdhar %>" type="text" />
+          </div>
+          <div class="row">
+            <p>Date Of Birth</p>
+            <input value="<%=  loanUserDob %>" type="date" />
+          </div>
+          <div class="row">
+            <p>Phone No.</p>
+            <input value="<%=  loanUserPhone %>" type="number" />
+          </div>
+          <div class="row">
+            <p>Email</p>
+            <input value="<%=  loanUserEmail %>" type="email" />
+          </div>
+          <div class="row">
+            <p>PAN Card No.</p>
+            <input value="<%= loanUserPan %>" type="number" />
+          </div>
+        <form spellcheck="false" class="loanform" method="POST" action="/Tab/loan/NewLoanEntry/save">
+          <!-- <div class="row">
+            <p>Photo</p>
+            <input type="text" />
+          </div> -->
+          <!-- <div class="row">
+            <p>Signature</p>
+            <input type="text" />
+          </div> -->
+          <div class="row">
+            <p>Monthly Income</p>
+            <input name="monthlyIncome" type="number" />
+          </div>
+          <div class="row">
+            <p>Occupation</p>
+            <input name="occupation" type="text" />
+          </div>
+          <div class="row">
+            <p>Required Loan Amount</p>
+            <input name="loanAmount" type="number" />
+          </div>
+          <div class="row">
+            <p>Credit Score</p>
+            <input name="creditScore" type="number" />
+          </div>
+          <div class="row">
+            <p>Sanction Amount Loan</p>
+            <input name="sanctionAmountLoan" type="number" />
+          </div>
+          <div class="row">
+            <p>Loan Period</p>
+            <input name="loanPeriod" type="number" />
+          </div>
+          <div class="row">
+            <p>Loan Type</p>
+            <input name="loanType" list="loanType" />
+            <datalist id="loanType">
+              <option value="Weekly"></option>
+              <option value="Daily"></option>
+              <option value="Monthly"></option>
+            </datalist>
+          </div>
+          <div class="row">
+            <p>Colateral For loan</p>
+            <input name="loanColateral" type="text" />
+          </div>
+          <div class="row">
+            <p>Colateral Amount</p>
+            <input name="colateralAmount" type="number" />
+          </div>
+          <div class="row">
+            <p>Installment Amount</p>
+            <input name="installmentAmount" type="number" />
+          </div>
+          <div class="row">
+            <p>Payment Type</p>
+            <input name="loanPaymentType" list="payType" />
+            <datalist id="payType">
+              <option value="NEFT"></option>
+              <option value="CASH"></option>
+              <option value="WITH IN SB"></option>
+            </datalist>
+          </div>
+          <button class="saveButton" type="submit">Save</button>
+        </form>
+      </div>
+</body>
+</html>

@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/reportCard.css">
+    <title>Document</title>
+</head>
+<body>
+
+    <form class="reportForm" action="/Tab/report/search" method="POST">
+      <input name="memberCode" value="<%= getUser._id %>" type="text"/>
+      <select name="reportType">
+                  <option value="memberInfo">Member Info</option>
+                  <option value="depositInfo">Deposit Info</option>
+                  <option value="loanInfo">Loan Info</option>
+      </select>
+      <button type="submit">Search</button>
+    </form>
+
+<div>
+    <% if(dataType == "memberInfo"){ %>
+        <div class="infoBox">
+            <h2>Member Info</h2>
+        <table >
+        <tr>
+            <th>Name</th>
+            <td><%= getUser.userName %></td>
+        </tr>
+        <tr>
+            <th>Father Name</th>
+            <td><%= getUser.fName %></td>
+        </tr>
+        <tr>
+            <th>Address</th>
+            <td><%= getUser.address %></td>
+        </tr>
+        <tr>
+            <th>Phone</th>
+            <td><%= getUser.phone %></td>
+        </tr>    
+        <tr>
+            <th>Pin No.</th>
+            <td><%= getUser.pin %></td>
+        </tr>
+        <tr>
+            <th>Pan No.</th>
+            <td><%= getUser.pan %></td>
+        </tr>
+        <tr>
+            <th>Voter ID</th>
+            <td><%= getUser.voter %></td>
+        </tr>
+        <tr>
+            <th>Adhar No.</th>
+            <td><%= getUser.adhar %></td>
+        </tr>
+        <tr>
+            <th>Occpation</th>
+            <td><%= getUser.occpation%></td>
+        </tr>
+        <tr>
+            <th>Email ID</th>
+            <td><%= getUser.email %></td>
+        </tr>
+        <tr>
+            <th>Date Of Birth</th>           
+            <td><%= getUser.dob %></td>  
+        </tr>
+        </table>
+    <% } %>
+    <% if(dataType == "depositInfo") { %>
+    <div class=" infoBox depositInfo">
+      <h2>Deposit Info</h2>
+      <table>
+        <tr>
+        <th>UserName</th>
+        <td><%= getUser.userName %></td>
+      </tr>
+      <tr>
+        <th>DepositType</th>
+        <td><%=getUser.depositType%></td>
+      </tr>
+      <tr>
+      <th>DepositAmount</th>
+      <td><%=getUser.depositAmount%></td>
+      </tr>
+      <tr>
+        <th>DepositTimePeriod</th>
+        <td><%=getUser.depositTimePeriod%></td>
+      </tr>
+      <tr>
+       <th>MaturityAmount</th>
+       <td><%=getUser.maturityAmount%></td>
+      </tr>
+      <tr>
+        <th>TotalDepositAmount</th>
+        <td><%=getUser.totalDepositAmount%></td>
+      </tr>
+      <tr>
+        <th>NominiName</th>
+        <td><%=getUser.nominiName%></td>
+      </tr>
+      <tr>
+        <th>NominiRelationship</th>
+        <td><%=getUser.nominiRelationship%></td>
+      </tr>
+      <tr>
+        <th>NominiAge</th>
+        <td><%=getUser.nominiAge%></td>
+      </tr>
+      <tr>
+      <th>NominiProof</th>
+       <td><%=getUser.nominiProof%></td>
+      </tr>
+      <tr>
+        <th>MaturityType</th>
+        <td><%=getUser.maturityType%></td>
+      </tr>
+      <tr>
+        <th>RefNumber</th>
+        <td><%=getUser.refNumber%></td>
+      </tr>
+      </table>
+    </div>
+    <% } %>
+    <% if(dataType == "loanInfo") { %>
+    <div class="infoBox loanInfo">
+        <h2>Loan Info</h2>
+        <table>
+        <tr>
+          <th>Name</th>
+          <td><%= getUser.userName %></td>
+        </tr>
+        <tr>
+          <th>Occupation</th>
+          <td><%= getUser.occupation %></td>
+        </tr>
+        <tr>
+          <th>Monthly Income</th>
+          <td><%= getUser.montdlyIncome %></td>
+        </tr>
+        <tr>
+          <th>Loan Amount</th>
+          <td><%= getUser.loanAmount %></td>
+        </tr>
+        <tr>
+          <th>CreditScore</th>
+          <td><%= getUser.creditScore %></td>
+        </tr>
+        <tr>
+          <th>Sanction Amount Loan</th>
+          <td><%= getUser.sanctionAmountLoan %></td>
+        </tr>
+        <tr>
+          <th>Loan Type</th>
+          <td><%= getUser.loanType %></td>
+        </tr>
+        <tr>
+          <th>Loan Colateral</th>
+          <td><%= getUser.loanColateral %></td>
+        </tr>
+        <tr>
+          <th>colateralAmount</th>
+          <td><%= getUser.colateralAmount %></td>
+        </tr>
+        <tr>
+          <th>installmentAmount</th>
+          <td><%= getUser.installmentAmount %></td>
+        </tr>
+        <tr>
+          <th>loanPaymentType</th>
+          <td><%= getUser.loanPaymentType %></td>
+        </tr>
+        <tr>
+          <th>Loan Period</th>
+          <td><%= getUser.loanPeriod %></td>
+        </tr>
+        <tr>
+          <th>Branch Name</th>
+          <td><%= getUser.branchName %></td>
+        </tr>
+        </table>
+        </div>
+    <% } %>
+</div>
+
+
+</body>
+</html>

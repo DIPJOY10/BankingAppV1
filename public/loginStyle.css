@@ -1,0 +1,43 @@
+body {
+  padding: 0px;
+  margin: 0px;
+  background-color: rgb(111, 165, 165);
+  display: flex;
+  justify-content: center;
+  padding-top: 20vh;
+}
+input {
+  width: 30vw;
+  height: 20px;
+  margin-bottom: 2%;
+  border: none;
+  border-style: none;
+  height: 4vh;
+
+  border-radius: 5px;
+}
+p {
+  font-size: 20px;
+  color: rgb(241, 239, 235);
+  font-family: Arial, Helvetica, sans-serif;
+}
+form {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+button {
+  margin-top: 10px;
+  width: 8vw;
+  height: 5vh;
+  border-radius: 5px;
+  border: none;
+  font-size: 1.1em;
+  font-weight: 300;
+  color: rgb(38, 63, 17);
+}
+button:hover {
+  cursor: pointer;
+  color: white;
+  background-color: black;
+}

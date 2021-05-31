@@ -1,0 +1,28 @@
+body {
+  /* background-color: rgb(129, 87, 168); */
+  background-color: rgb(123, 123, 207);
+  display: flex;
+  justify-content: center;
+  padding-top: 30vh;
+}
+
+.nav_links {
+  display: flex;
+  justify-content: space-around;
+  list-style: none;
+  width: 80vw;
+  color: white;
+}
+button {
+  border-style: none;
+  width: 18vw;
+  height: 9vh;
+  border-radius: 5px;
+  font-size: 1.2em;
+}
+
+button:hover {
+  cursor: pointer;
+  color: white;
+  background-color: black;
+}

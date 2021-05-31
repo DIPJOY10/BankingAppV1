@@ -1,0 +1,70 @@
+body {
+  background-color: rgb(111, 165, 165);
+}
+
+.reportForm {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  margin-top: 5vh;
+  width: 100vw;
+}
+.reportForm input {
+  width: 20%;
+  height: 35px;
+  outline: none;
+  border: none;
+  padding-left: 10px;
+  border-radius: 5px;
+}
+.reportForm select {
+  width: 20%;
+  height: 30px;
+  font-size: 1.1rem;
+  border: none;
+  outline: none;
+  padding-left: 10px;
+  border-radius: 4px;
+}
+.reportForm button {
+  width: 10vw;
+  height: 40px;
+  font-size: 1.1rem;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.reportForm button:hover {
+  color: white;
+  background-color: black;
+}
+
+.infoBox {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 5vh;
+  margin-bottom: 7vh;
+}
+.infoBox table {
+  box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
+}
+.infoBox table tr th {
+  border: 2px solid white;
+  padding: 7px;
+  font-size: 20px;
+  margin: 0px;
+  margin-bottom: 3px;
+  text-align: left;
+}
+.infoBox table tr td {
+  border: 2px solid white;
+  padding: 7px;
+  font-size: 20px;
+  margin: 0px;
+  margin-bottom: 3px;
+  width: 40vw;
+}

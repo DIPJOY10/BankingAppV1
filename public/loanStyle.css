@@ -1,0 +1,29 @@
+body {
+  margin: 0px;
+  padding: 0px;
+  background-color: rgb(111, 165, 165);
+  display: flex;
+  justify-content: center;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.loan {
+  display: flex;
+  justify-content: space-around;
+  padding: 20vw;
+  width: 60%;
+}
+
+button {
+  width: 16vw;
+  height: 8vh;
+  border-radius: 5px;
+  border: none;
+  font-size: 1.2em;
+}
+
+button:hover {
+  cursor: pointer;
+  background-color: black;
+  color: white;
+}

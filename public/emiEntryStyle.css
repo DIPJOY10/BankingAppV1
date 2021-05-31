@@ -1,0 +1,57 @@
+body {
+  margin: 0px;
+  padding: 0px;
+  display: flex;
+  justify-content: center;
+  background-color: rgb(111, 165, 165);
+  font-family: Arial, Helvetica, sans-serif;
+  color: white;
+}
+
+h3 {
+  text-align: center;
+  font-size: 2em;
+  border-bottom: 5px solid rgb(184, 136, 136);
+  margin-bottom: 20px;
+  padding-bottom: 20px;
+}
+
+.emi {
+  width: 55vw;
+}
+.emiform {
+  width: 100%;
+}
+.row {
+  display: flex;
+  justify-content: space-between;
+}
+textarea {
+  border-style: none;
+  width: 55%;
+  height: 8vh;
+  margin: 5px;
+  border-radius: 5px;
+}
+input {
+  border-style: none;
+  width: 55%;
+  height: 4vh;
+  margin: 5px;
+  border-radius: 5px;
+}
+button {
+  padding: 14px 34px;
+  border-radius: 5px;
+  border: none;
+  margin-top: 5vh;
+  margin-bottom: 10vh;
+  margin-left: 40%;
+  font-size: 1.2em;
+}
+
+button:hover {
+  cursor: pointer;
+  background-color: black;
+  color: white;
+}

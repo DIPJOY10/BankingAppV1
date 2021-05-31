@@ -1,0 +1,57 @@
+body {
+  display: flex;
+  justify-content: center;
+  background-color: rgb(111, 165, 165);
+  padding: 2vw;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.register {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+h2 {
+  font-size: 40px;
+  color: white;
+  margin-bottom: 5vh;
+  border-bottom: 5px solid rgb(206, 139, 139);
+  padding-bottom: 20px;
+}
+.row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 60vw;
+  margin: 10px;
+}
+.row label {
+  font-size: 20px;
+  color: white;
+}
+textarea {
+  border-style: none;
+  width: 70%;
+  height: 8vh;
+  border-radius: 5px;
+}
+input {
+  border: none;
+  width: 70%;
+  height: 4vh;
+  border-radius: 5px;
+}
+button {
+  margin-left: 50%;
+  margin-top: 2vw;
+  width: 8vw;
+  height: 5vh;
+  border: none;
+  font-size: 1.2em;
+  border-radius: 8px;
+}
+button:hover {
+  cursor: pointer;
+  background-color: black;
+  color: white;
+}

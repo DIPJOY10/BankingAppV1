@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/depositStyle.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="deposit">
+
+        <h2>Deposit Entry Form</h2>
+        <!-- first form -->
+        <form spellcheck="false" class="search_form" method="POST" action="/search">
+
+          <div class="row">
+            <h4>Member Code</h4>
+            <input name="uniqueId" class="code" type="text" />
+          </div>
+
+          <button class="submit" type="submit">
+            Search
+          </button>
+
+        </form>
+
+        <!-- second form -->
+        <form spellcheck="false" class="auto_form" action="">
+
+          <div class="row">
+            <p>Name</p>
+            <input name="userName" type="text" />
+          </div>
+
+          <div class="row">
+            <p>Address</p>
+            <input name="address" id="" cols="40" rows="3"></textarea>
+          </div>
+
+          <div class="row">
+            <p>PIN</p>
+            <input name="pin" type="number" />
+          </div>
+
+          <div class="row">
+            <p>Voter Card Number</p>
+            <input name="voter" type="text" />
+          </div>
+
+          <div class="row">
+            <p>Adhar Card Number</p>
+            <input name="adhar" type="number" />
+          </div>
+
+          <div class="row">
+            <p>Date Of Birth</p>
+            <input name="dob" type="date" />
+          </div>
+          
+          <div class="row">
+            <p>Phone Number</p>
+            <input name="phone" type="phone" />
+          </div>
+
+          <div class="row">
+            <p>Email</p>
+            <input name="email" type="email" />
+          </div>
+        </form> 
+
+          <h3>Deposit</h3>
+        <form spellcheck="false" class="dep_form" action="/Tab/deposit/save" method="POST">
+          <!-- subpart 1 -->
+          <div class="row">
+            <p>Type</p>
+            <input name="depositType" list="dep" />
+            <datalist id="dep">
+              <option value="FD"></option>
+              <option value="RD"></option>
+              <option value="MIS"></option>
+              <option value="DD"></option>
+            </datalist>
+          </div>
+
+          <div class="row">
+            <p>Amount</p>
+            <input name="depositAmount" type="number" />
+          </div>
+
+          <div class="row">
+            <p>Time Period</p>
+            <input name="depositTimePeriod" type="number" />
+          </div>
+
+          <div class="row">
+            <p>Maturity Amount</p>
+            <input name="maturityAmount" type="number" />
+          </div>
+
+          <div class="row">
+            <p>Total Deposit Amount</p>
+            <input name="totalDepositAmount" type="number" />
+          </div>
+
+          <!-- subpart 2 -->
+          <h3>Nomini Detail</h3>
+
+          <div class="row">
+            <p>Name</p>
+            <input name="nominiName" type="text" />
+          </div>
+
+          <div class="row">
+            <p>Relationship</p>
+            <input name="nominiRelationship" list="rltn" />
+            <datalist id="rltn">
+              <option value="Father"></option>
+              <option value="Mother"></option>
+              <option value="Husband"></option>
+              <option value="Wife"></option>
+              <option value="Brother"></option>
+              <option value="Sister"></option>
+            </datalist>
+          </div>
+
+          <div class="row">
+            <p>Age</p>
+            <input name="nominiAge" type="number" />
+          </div>
+
+          <div class="row">
+            <p>ID Proof(Voter/PAN)</p>
+            <input name="nominiProof" type="text" />
+          </div>
+
+          <div class="row">
+            <p>Maturity Type</p>
+            <input name="maturityType" list="type" />
+            <datalist id="type">
+              <option value="NEFT"></option>
+              <option value="RTGS"></option>
+              <option value="ECS"></option>
+              <option value="CASH"></option>
+            </datalist>
+          </div>
+
+          <div class="row">
+            <p>REF/UTR/VC No.</p>
+            <input name="refNumber" type="number" />
+          </div>
+
+          <button class="saveButton" type="submit">
+            Save
+          </button>
+        </form>
+
+      </div>
+</body>
+</html>
